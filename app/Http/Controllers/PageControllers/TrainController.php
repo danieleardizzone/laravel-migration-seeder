@@ -11,7 +11,7 @@ class TrainController extends Controller
 {
     public function index() {
 
-        $trains = Train::all();
+        $trains = Train::all()->where('stazione_di_partenza', 'palermo');
 
         return view('index', compact('trains'));
     }
