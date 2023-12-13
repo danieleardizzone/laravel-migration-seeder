@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageControllers\TrainController as TrainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-use App\Http\Controllers\PageControllers\TrainController as TrainController;
 
 Route::get('/', [TrainController::class, 'index']);
