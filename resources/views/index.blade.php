@@ -13,22 +13,24 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">azienda</th>
-            <th scope="col">stazione di partenza</th>
-            <th scope="col">stazioe di arrivo</th>
-            <th scope="col">orario di partenza</th>
-            <th scope="col">orario di arrivo</th>
+            <th scope="col">Azienda</th>
+            <th scope="col">Stazione di partenza</th>
+            <th scope="col">Stazioe di arrivo</th>
+            <th scope="col">Orario di partenza</th>
+            <th scope="col">Orario di arrivo</th>
+            <th scope="col">Codice identificativo</th>
           </tr>
         </thead>
         <tbody>
             @foreach ($trains as $train)
         
             <tr>
-                <td scope="row">{{ $train->azienda }}</td>
-                <td>{{ $train->stazione_di_partenza }}</td>
-                <td>{{ $train->stazione_di_arrivo }}</td>
-                <td>{{ $train->orario_di_partenza }}</td>
-                <td>{{ $train->orario_di_arrivo }}</td>
+                <td scope="row">{{ $train->agency }}</td>
+                <td>{{ $train->departure_station }}</td>
+                <td>{{ $train->arrival_station }}</td>
+                <td>{{ $train->departure_time }}</td>
+                <td>{{ $train->arrival_time }}</td>
+                <td>{{ $train->train_code }}</td>
             </tr>
 
             @endforeach
